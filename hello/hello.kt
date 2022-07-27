@@ -1,5 +1,5 @@
 package hello
 
 fun main(){
-    println("Hello moto")
+    println("Hello moto ")
 }

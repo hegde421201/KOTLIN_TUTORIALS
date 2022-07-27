@@ -1,0 +1,10 @@
+Open/Closed principle tells us that a software artifact should be open for extension but closed for modification.
+A module is said to be open if it is open for extension.For example, it should be possible to expand its set of operations
+or add fields to its data structures.
+
+ A module is said to be closed if it is available for use by other modules.
+ This assumes that the module has been given a well-defined and stable description.
+
+ At the implementation level, closure for a module also implies
+ that you may compile it, perhaps store it in a library, and make it available for others (its clients) to use.
+
