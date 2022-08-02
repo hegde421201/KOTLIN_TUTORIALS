@@ -1,0 +1,90 @@
+Lambda is equivalent to a function (method) without a name.
+
+Lambdas are also called anonymous functions.
+It has all the properties of a regular function like - method parameters, method body and return type
+
+Lambda expression ----
+
+() ---> lambda input parameters
+-> Arrow
+{} Lambda body
+
+Uses of lambda
+----------------
+
+1) Lambda is mainly used to implement Functional interfaces (SAM)
+
+@FunctionalInterface
+public interface Comparator<T>
+{
+    int compare(T o1,T o2);
+}
+
+
+@FunctionalInterface
+public interface Runnable
+{
+    public abstract void run();
+}
+
+If lambda expression is going to execute multiple statements then curly braces are mandatory else they are not important.
+
+Functional interfaces were introduced in Java 8
+
+Consumer
+Predicate
+Function
+Supplier
+
+Consumer - Biconsumer
+Predicate - Bipredicate
+Function - BiFunction,UnaryOperator,BinaryOperator
+
+Collections
+----------
+
+Can add or modify elements at any point of time.
+For example:----
+-----
+
+List -> list.add(<element>)
+
+Elements in the collection can be accessed in any order.
+Example: list.get(4)
+
+Collection is eagerly constructed.
+
+Collections can be traversed multiple times.
+Performs external iteration to iterate through elements.
+
+
+---------------------------------------------------------------------------------------------------------
+
+Streams
+---------
+
+Cannot add or modify elements in the stream.It is a fixed data set.
+Elements in the stream can be accessed in a sequence only.
+Streams are lazily constructed.
+Streams can be traversed only once.
+Performs internal iteration to iterate through the elements.
+
+
+KOTLIN_TUTORIALS  sources root,  ~/KotlinTutorials/KOTLIN_TUTORIALS
+  .idea
+  hello
+  java2.designpatterns.solid
+    ocp
+    srp
+      better
+        BetterSRP
+        EmpIoyeeIdGenerator
+        Employee
+        SeniorityChecker
+      Employee
+      SRP
+  out
+  solid
+  README.md
+External Libraries
+Scratches and Consoles
